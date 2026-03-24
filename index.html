@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[공지] BRAND 2단계 오픈</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f0eb; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 40px 20px; }
+  .card { max-width: 560px; width: 100%; background: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
+  .header { background: linear-gradient(135deg, #1B2A4A 0%, #2C3E6B 50%, #3D5A99 100%); padding: 48px 36px 40px; text-align: center; position: relative; }
+  .header::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 30px; background: #ffffff; border-radius: 24px 24px 0 0; }
+  .badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 6px 18px; font-size: 12px; font-weight: 500; color: #c4d4f0; letter-spacing: 1px; margin-bottom: 20px; }
+  .header h1 { font-size: 22px; font-weight: 900; color: #ffffff; line-height: 1.5; margin-bottom: 0; }
+  .header h1 .sub { display: block; font-size: 28px; font-weight: 900; color: #ffffff; margin-top: 4px; }
+  .body { padding: 20px 36px 36px; }
+  .intro { background: linear-gradient(135deg, #fdf6ef, #fff8f0); border-left: 3px solid #E8723A; border-radius: 0 12px 12px 0; padding: 20px 22px; margin-bottom: 28px; font-size: 14px; line-height: 1.85; color: #4a3a2a; word-break: keep-all; }
+  .intro strong { color: #E8723A; font-weight: 700; }
+  .message { font-size: 14px; line-height: 1.9; color: #444; margin-bottom: 28px; word-break: keep-all; }
+  .message p { margin-bottom: 16px; } .message p:last-child { margin-bottom: 0; }
+  .message .highlight { background: linear-gradient(transparent 60%, #fff3cd 60%); font-weight: 700; color: #333; }
+  .message .bold { font-weight: 700; color: #1B2A4A; }
+  .gains { background: #f8f9fc; border-radius: 16px; padding: 24px; margin-bottom: 28px; }
+  .gains h3 { font-size: 14px; font-weight: 700; color: #1B2A4A; margin-bottom: 6px; }
+  .gains .gains-sub { font-size: 12.5px; color: #888; margin-bottom: 16px; line-height: 1.6; }
+  .gain-item { display: flex; align-items: flex-start; margin-bottom: 10px; font-size: 13px; color: #444; line-height: 1.6; }
+  .gain-item:last-child { margin-bottom: 0; }
+  .gain-dot { min-width: 6px; height: 6px; background: #E8723A; border-radius: 50%; margin-top: 7px; margin-right: 10px; flex-shrink: 0; }
+  .persuade { font-size: 13.5px; line-height: 1.85; color: #555; margin-bottom: 28px; word-break: keep-all; }
+  .persuade p { margin-bottom: 14px; } .persuade p:last-child { margin-bottom: 0; }
+  .persuade strong { color: #1B2A4A; font-weight: 700; }
+  .divider { width: 40px; height: 2px; background: #ddd; margin: 0 auto 28px; border-radius: 2px; }
+  .curriculum { background: #ffffff; border: 1px solid #e8e8e8; border-radius: 16px; overflow: hidden; margin-bottom: 24px; }
+  .curriculum-header { background: linear-gradient(135deg, #2C3E6B, #3D5A99); padding: 14px 20px; font-size: 13px; font-weight: 700; color: #ffffff; text-align: center; }
+  .curriculum-body { padding: 8px 0; }
+  .lesson-row { display: flex; align-items: center; padding: 11px 20px; border-bottom: 1px solid #f5f5f5; font-size: 13px; }
+  .lesson-row:last-child { border-bottom: none; }
+  .lesson-num { min-width: 42px; height: 42px; background: #eef3fb; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #3D5A99; margin-right: 14px; flex-shrink: 0; line-height: 1.2; text-align: center; }
+  .lesson-content { flex: 1; } .lesson-title { font-size: 13.5px; font-weight: 700; color: #1B2A4A; margin-bottom: 3px; }
+  .lesson-action { font-size: 11.5px; color: #E8723A; font-weight: 500; line-height: 1.5; }
+  .lesson-row:nth-child(odd) { background: #fafbfd; } .lesson-row:nth-child(even) { background: #ffffff; }
+  .curriculum-summary { padding: 14px 20px; background: #f8f9fc; font-size: 12px; color: #777; line-height: 1.7; border-top: 1px solid #eee; word-break: keep-all; }
+  .curriculum-summary strong { color: #1B2A4A; }
+  .info-box { background: #f8f9fc; border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+  .info-box h3 { font-size: 13px; font-weight: 700; color: #3D7FCC; margin-bottom: 16px; letter-spacing: 1px; }
+  .info-row { display: flex; align-items: flex-start; margin-bottom: 12px; font-size: 13px; color: #555; }
+  .info-row:last-child { margin-bottom: 0; }
+  .info-label { min-width: 56px; font-weight: 700; color: #1B2A4A; flex-shrink: 0; }
+  .info-value { line-height: 1.6; } .info-note { font-size: 11.5px; color: #999; margin-top: 4px; line-height: 1.5; }
+  .schedule { background: #ffffff; border: 1px solid #e8e8e8; border-radius: 16px; overflow: hidden; margin-bottom: 24px; }
+  .schedule-header { background: #1B2A4A; padding: 14px 20px; font-size: 13px; font-weight: 700; color: #ffffff; text-align: center; }
+  .schedule-sub { text-align: center; padding: 10px 20px 4px; font-size: 12px; color: #888; }
+  .schedule-body { padding: 4px 0; }
+  .schedule-group { padding: 14px 20px; border-bottom: 1px solid #f0f0f0; }
+  .schedule-group:last-child { border-bottom: none; }
+  .schedule-group-title { font-size: 13px; font-weight: 700; color: #1B2A4A; margin-bottom: 8px; }
+  .time-slots { display: flex; flex-wrap: wrap; gap: 6px; }
+  .time-chip { display: inline-block; background: #eef3fb; border-radius: 8px; padding: 5px 12px; font-size: 12.5px; color: #3D5A99; font-weight: 500; }
+  .time-chip.orange { background: #fff3e8; color: #E8723A; }
+  .cta-section { text-align: center; margin-bottom: 8px; }
+  .cta-button { display: inline-block; background: linear-gradient(135deg, #E8723A, #D4602E); color: #ffffff; font-size: 15px; font-weight: 700; padding: 16px 40px; border-radius: 50px; text-decoration: none; letter-spacing: 0.5px; box-shadow: 0 6px 20px rgba(232,114,58,0.3); }
+  .closing { margin-top: 24px; font-size: 13.5px; line-height: 1.85; color: #555; word-break: keep-all; }
+  .closing strong { color: #1B2A4A; }
+  .footer { background: #f8f9fc; padding: 20px 36px; text-align: center; font-size: 12px; color: #999; line-height: 1.7; }
+  .footer .brand { font-weight: 700; color: #1B2A4A; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <div class="badge">BRAND REBOOTING CLUB &middot; 2단계</div>
+    <h1>강점세포에서 찾은 &lsquo;나&rsquo;를,<span class="sub">진짜 브랜드로</span></h1>
+  </div>
+  <div class="body">
+    <div class="intro">1단계 <strong>강점세포 깨우기</strong>에서 "나는 어떤 사람인지, 어디까지 가보고 싶은지" 감이 오셨죠?<br><br>이제 그 &lsquo;나&rsquo;를 브랜드까지 끌고 가는 <strong>BRAND 2단계 컨셉 워크숍</strong>을 엽니다.<br><br>이번 4월, 한 달 동안은 머릿속에서만 맴돌던 생각들을 키워드와 문장으로 꺼내서 <strong>"나는 이런 브랜드다"</strong>라고 말할 수 있는 뼈대를 함께 잡아볼 거예요.</div>
+    <div class="gains">
+      <h3>이번 4주에, 여기까지 같이 갑니다</h3>
+      <div class="gains-sub">이번 BRAND 2단계의 목표는 완벽한 브랜드가 아니라<br>"갈수록 더 뾰족해질 수밖에 없는 구조"를 만드는 것.<br>4주가 끝나면, 여러분 손에는 최소 이 정도가 남아 있을 거예요.</div>
+      <div class="gain-item"><div class="gain-dot"></div><span>브랜드의 출발점이 되는 나의 WHY</span></div>
+      <div class="gain-item"><div class="gain-dot"></div><span>내가 실제로 팔 핵심 상품</span></div>
+      <div class="gain-item"><div class="gain-dot"></div><span>마음을 흔들 단 한 사람, 타깃 페르소나</span></div>
+      <div class="gain-item"><div class="gain-dot"></div><span>나만의 한 끗 차이, 차별화 전략</span></div>
+      <div class="gain-item"><div class="gain-dot"></div><span>흩어진 키워드의 묶음, 브랜드 컨셉 초안</span></div>
+      <div class="gain-item"><div class="gain-dot"></div><span>내 이야기에서 꺼낸 경험 기반 브랜드 스토리</span></div>
+      <div class="gain-item"><div class="gain-dot"></div><span>이야기와 컨셉을 하나로 잇는 흐름</span></div>
+      <div class="gain-item"><div class="gain-dot"></div><span>브랜드를 관통하는 한 줄</span></div>
+    </div>
+    <div class="persuade">
+      <p>브랜드 컨셉은 "언젠가 완벽해지면 시작하는 것"이 아니라, <strong>지금 보이는 만큼이라도 꺼내보고, 써보고, 말해보면서 계속 다듬어가는 과정</strong>에 가깝습니다.</p>
+      <p>이번 기수의 역할은, 그 과정의 첫 초안을 함께 만드는 것.</p>
+      <p>"나 누구인지"는 알겠는데, 인스타/블로그/소개 자리에서 나를 한 번에 설명하기 어려웠다면, <strong>이번 4주가 그 부분을 뚫어주는 시간</strong>이 될 거예요.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="curriculum">
+      <div class="curriculum-header">8강 커리큘럼</div>
+      <div class="curriculum-body">
+        <div class="lesson-row"><div class="lesson-num">1강</div><div class="lesson-content"><div class="lesson-title">브랜드의 출발점, 나의 WHY</div><div class="lesson-action">&rarr; 내 브랜드를 움직이는 한 문장 이유가 생깁니다</div></div></div>
+        <div class="lesson-row"><div class="lesson-num">2강</div><div class="lesson-content"><div class="lesson-title">무엇을 팔지, 나의 핵심 상품</div><div class="lesson-action">&rarr; 흩어져 있던 강점이 '팔 수 있는 것'으로 정리됩니다</div></div></div>
+        <div class="lesson-row"><div class="lesson-num">3강</div><div class="lesson-content"><div class="lesson-title">마음을 흔들 단 한 사람, 타깃 페르소나</div><div class="lesson-action">&rarr; 내가 진짜 집중할 한 사람의 얼굴이 선명해집니다</div></div></div>
+        <div class="lesson-row"><div class="lesson-num">4강</div><div class="lesson-content"><div class="lesson-title">나만의 한 끗 차이, 차별화 전략</div><div class="lesson-action">&rarr; 나를 선택할 이유가 한 문장으로 또렷해집니다</div></div></div>
+        <div class="lesson-row"><div class="lesson-num">5강</div><div class="lesson-content"><div class="lesson-title">흩어진 키워드의 묶음, 브랜드 컨셉 초안</div><div class="lesson-action">&rarr; WHY&middot;상품&middot;타깃&middot;차별화를 조합해, 컨셉 초안을 뽑아냅니다</div></div></div>
+        <div class="lesson-row"><div class="lesson-num">6강</div><div class="lesson-content"><div class="lesson-title">내 이야기의 힘, 경험 기반 브랜드 스토리</div><div class="lesson-action">&rarr; 내 경험과 전환점이 고객을 설득하는 이야기로 정리됩니다</div></div></div>
+        <div class="lesson-row"><div class="lesson-num">7강</div><div class="lesson-content"><div class="lesson-title">이야기와 컨셉의 합, 브랜드 서사와 컨셉의 연결</div><div class="lesson-action">&rarr; 브랜드 스토리와 컨셉이 하나의 흐름으로 이어집니다</div></div></div>
+        <div class="lesson-row"><div class="lesson-num">8강</div><div class="lesson-content"><div class="lesson-title">브랜드를 관통하는 한 줄</div><div class="lesson-action">&rarr; 나를 대신 소개해줄 브랜드의 중심 문장이 탄생합니다</div></div></div>
+      </div>
+      <div class="curriculum-summary">한 문장으로 요약하면, <strong>"나라는 사람"과 "내가 팔 것", "내가 돕고 싶은 사람", "내 이야기"를 하나의 브랜드 언어로 묶는 8단계</strong>라고 보시면 돼요.</div>
+    </div>
+    <div class="info-box">
+      <h3>수업 안내</h3>
+      <div class="info-row"><span class="info-label">대상</span><span class="info-value">1단계 강점세포 깨우기를 마친 멤버</span></div>
+      <div class="info-row"><span class="info-label">기간</span><span class="info-value">4주 완성 (주 2회, 총 8회차)</span></div>
+      <div class="info-row"><span class="info-label">시작</span><span class="info-value">2026년 4월 첫째 주</span></div>
+      <div class="info-row"><span class="info-label">방식</span><span class="info-value">VOD 조별 상영회 + 토론 + 워크숍 (실습&middot;피드백)<div class="info-note">혼자 듣고 끝나는 VOD가 아니라, 보면서 바로 내 브랜드에 적용해보는 시간으로 진행됩니다.</div></span></div>
+    </div>
+    <div class="schedule">
+      <div class="schedule-header">시간 선택 & 참여 방법</div>
+      <div class="schedule-sub">월&middot;수반, 화&middot;목반, 토요일 몰입반 중에서<br>이번 달 가장 집중할 수 있는 시간대를 하나만 골라주세요.<br><span style="color:#e67e22; font-size:13px; margin-top:6px; display:inline-block;">* 새벽반은 미리 영상을 보고 6시에 만나도 됩니다.</span></div>
+      <div class="schedule-body">
+        <div class="schedule-group"><div class="schedule-group-title">월&middot;수반 (4/7 시작)</div><div class="time-slots"><span class="time-chip">새벽 5:30~7:00</span><span class="time-chip">오전 10:00~11:30</span><span class="time-chip">저녁 8:00~9:30</span><span class="time-chip">밤 10:00~11:30</span></div></div>
+        <div class="schedule-group"><div class="schedule-group-title">화&middot;목반 (4/8 시작)</div><div class="time-slots"><span class="time-chip">새벽 5:30~7:00</span><span class="time-chip">오전 10:00~11:30</span><span class="time-chip">저녁 8:00~9:30</span><span class="time-chip">밤 10:00~11:30</span></div></div>
+        <div class="schedule-group"><div class="schedule-group-title">토요일 몰입반 (4/12 시작)</div><div class="time-slots"><span class="time-chip orange">오전 8:00~11:00 (3시간, 2회차 연속)</span></div></div>
+      </div>
+    </div>
+    <div class="cta-section"><a href="https://docs.google.com/forms/d/e/1FAIpQLSftJmYZ-6TQDURCpPlQ7bLp9Yfz9ggyq-vND7E6mpfkIInYpg/viewform" target="_blank" style="text-decoration: none;"><div class="cta-button">2월 28일(토) 시간대 신청 접수 오픈</div></a></div>
+    <div class="closing">
+      <p>이 공지 읽으면서 "아&hellip; 나 저거 진짜 필요하다"가 살짝이라도 올라왔다면, 그게 이번 4주를 같이 달려야 한다는 신호일지도 몰라요.</p>
+      <p><strong>완벽한 브랜드 말고, 지금의 나를 관통하는 한 줄을 먼저 같이 찾아봅시다.</strong></p>
+    </div>
+  </div>
+  <div class="footer"><span class="brand">브랜드 리부팅 클럽</span><br>1인기업가를 위한 1년 브랜드 멤버십 프로그램<br>SELF(강점세포) &rarr; <strong>BRAND(브랜드 컨셉)</strong> &rarr; SALES(수익화 마케팅)</div>
+</div>
+</body>
+</html>
